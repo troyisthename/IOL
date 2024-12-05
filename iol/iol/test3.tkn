@@ -1,0 +1,20 @@
+<IOL,IOL> 
+        <INT,INT> <IDENT,num> <IS,IS> <INT_LIT,0> <INT,INT> <IDENT,res> <IS,IS> <ADD,ADD> <INT_LIT,3> <MULT,MULT> <IDENT,num> <INT_LIT,2>
+        <INTO,INTO> <IDENT,num> <IS,IS> <ADD,ADD> <ADD,ADD> <MULT,MULT> <INT_LIT,3> <DIV,DIV> <INT_LIT,9> <INT_LIT,3> <INT_LIT,8> <INT_LIT,7>
+        <STR,STR> <IDENT,msg1> <STR,STR> <IDENT,msg2> <STR,STR> <IDENT,msg3>
+        <BEG,BEG> <IDENT,msg1> <BEG,BEG> <IDENT,msg2> 
+        <BEG,BEG> <IDENT,msg3> 
+        <NEWLN,NEWLN> <PRINT,PRINT> <IDENT,msg1> 
+        <PRINT,PRINT> <ADD,ADD> <ADD,ADD> <MULT,MULT> <INT_LIT,3> <MOD,MOD> <INT_LIT,9> <INT_LIT,3> <INT_LIT,8> <INT_LIT,1>
+        <NEWLN,NEWLN>  
+        <PRINT,PRINT> <IDENT,msg2> 
+        <PRINT,PRINT> <IDENT,res>
+        <NEWLN,NEWLN> 
+<BEG,BEG> <IDENT,num>
+        <PRINT,PRINT> <MOD,MOD> <INT_LIT,1> <IDENT,num> 
+        <PRINT,PRINT> <IDENT,res> 
+	<NEWLN,NEWLN>
+<PRINT,PRINT> <DIV,DIV> <INT_LIT,1> <MULT,MULT> <IDENT,num> <INT_LIT,3>
+        <INT,INT> <IDENT,x> <INT,INT> <IDENT,y> <STR,STR> <IDENT,p>
+
+<LOI,LOI><EOF,b'\x00'>

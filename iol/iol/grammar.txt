@@ -1,0 +1,38 @@
+EBNF Grammar of IOL
+
+program 			→ 		'IOL' {statement} 'LOI'
+
+statement 			→		var_declaration
+						|	assignment
+						|	input
+						|	output
+						|	newline
+
+var_declaration		→		data_type var_name
+						|	data_type var_name IS expression
+
+assignment			→		'INTO' var_name 'IS' expression
+
+input				→		'BEG' var_name
+
+output				→		'PRINT' expression
+
+expression			→		('ADD' | 'SUB' | 'MULT' | 'DIV' | 'MOD') expression1 expression2 | operand
+
+operand				→		numeric_literal | var_name
+
+newline				→		'NEWLN'
+
+data_type			→		'INT' | 'STR'
+
+numeric_literal		→		['-' | '+'] digit {digit}
+
+var_name			→		letter {(letter | digit)}
+
+letter				→		'a' | 'b' | 'c' | 'd' | 'e' | 'f' | 'g' | 'h' | 'i' | 'j' | 'k' | 'l'
+ 							| 'm' | 'n' | 'o' | 'p' | 'q' | 'r' | 's' | 't' | 'u' | 'v' | 'w' | 'x' | 'y' | 'z'
+ 							| 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G' | 'H' | 'I' | 'J' | 'K' | 'L'
+ 							| 'M' | 'N' | 'O' | 'P' | 'Q' | 'R' | 'S' | 'T' | 'U' | 'V' | 'W' | 'X' | 'Y' | 'Z'
+
+digit				→		'0' | '1' | '2' | '3' | '4'
+						|	'5' | '6' | '7' | '8' | '9'
